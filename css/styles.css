@@ -3,6 +3,7 @@
 /* Criando variáveis para mudar tudo e não ter que ir até lá*/
 :root {
   --bg-gray: #ddd;
+  --text-gray: #4a4a4a;
   --color-primary: #4d41c0;
   --white: #fff;
 }
@@ -61,4 +62,47 @@ a:hover {
 
 .dsmovie-contact-container img {
   margin-right: 10px; /*Separação do texto com a imagem*/
+}
+
+/*id usa #*/
+#dsmovie-card-list {
+  padding: 40px 0px;
+}
+
+.dsmovie-card {
+  width: 360px;
+}
+
+.dsmovie-card img {
+  width: 100%; /*tamanho da imagem de 100% de onde está - sem passar*/
+  border-radius: 8px 8px 0 0; /*faz sentido horario - começa por cima*/
+}
+
+.dsmovie-card-description {
+  background-color: var(--white);
+  padding: 10px 0 20px 0;
+  display: flex;
+  flex-direction: column; /*eixo em vertical - itens em coluna*/
+  align-items: center; /*alinhar os elementos ao centro*/
+  border-radius: 0 0 8px 8px;
+}
+
+.dsmovie-card-description h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.dsmovie-btn,
+.dsmovie-btn:hover {
+  width: 180px; /*largura*/
+  height: 40px; /*altura*/
+  background-color: var(--color-primary);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 700; /*tamanho da letra/fonte*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
 }
