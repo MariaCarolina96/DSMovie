@@ -1,6 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
+/* Criando variáveis para mudar tudo e não ter que ir até lá*/
+:root {
+  --bg-gray: #ddd;
+  --color-primary: #4d41c0;
+  --white: #fff;
+}
+
 /*Mudando a fonte de toda a página para Open Sans com o google fontes */
 * {
   font-family: "Open Sans", sans-serif;
+}
+
+html,
+body {
+  background-color: var(--bg-gray); /*plano de fundo cinza*/
+}
+
+/* Mudando os itens da parte superior - onde navegamos */
+header {
+  background-color: var(--color-primary); /*cor da área roxo*/
+  color: var(--white); /*texto em branco*/
+  height: 60px;
+  display: flex;
+  align-items: center; /*alinhar o texto no centro*/
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Quando tiver um nav e um h1 dentro dele*/
+nav h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav a {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* a - Mudando a Cor da navegação
+a:hover - é quando você passa o mouse por cima e fica com uma cor diferente
+none - nenhuma
+*/
+a,
+a:hover {
+  text-decoration: none;
+  color: unset;
+}
+
+/*Quando é classe você seleciona ele com o .*/
+.dsmovie-contact-container {
+  display: flex;
+  align-items: center;
+}
+
+.dsmovie-contact-container img {
+  margin-right: 10px; /*Separação do texto com a imagem*/
 }
